@@ -29,7 +29,7 @@
 # For loop in lambda
 (
     lambda _=None: (
-        # for i in range(1):
+        # for i in range(10):
         #    print(i)
         [(lambda x: (
             print(x)
