@@ -19,12 +19,14 @@
 )()
 
 # If statement in lambda
-(lambda _=None: (
-    globals().update({"number": 0}),
-    number == 0 and print("number is 0"),
-    globals().update({"number": 14}),
-    number == 0 and print("number is 0") or print("number is not 0")
-))()
+(
+    lambda _=None: (
+        globals().update({"number": 0}),
+        number == 0 and print("number is 0"),
+        globals().update({"number": 14}),
+        number == 0 and print("number is 0") or number == 7 and print("number is 7") or print("number is not 0 or 7")
+    )
+)()
 
 # For loop in lambda
 (
